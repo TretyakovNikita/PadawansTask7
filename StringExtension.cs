@@ -6,7 +6,15 @@ namespace PadawansTask7
     {
         public static void OrderStringsByLength(string[] array)
         {
-            int length = array.Length;
+            if (array is null)
+            {
+                throw new ArgumentNullException();
+            }
+            if (array.Length == 0)
+            {
+                throw new ArgumentNullException();
+            }
+                int length = array.Length;
 
             string temp = array[0];
 
